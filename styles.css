@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Hanken Grotesk', sans-serif;;
+}
+
+body {
+    background-color: #f3eae3;
+}
+
+main {
+    max-width: 375px;
+    height: auto;
+    margin: 20px 15px 20px 15px;
+    
+}
+
+.mobile-product-image {
+    display: block;
+    max-width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-component {
+    background-color: #ffffff;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eyebrow {
+    font-family: 'Montserrat';
+    font-weight: 100;
+}
+
+.product-name {
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+.desktop-product-image {
+    display: none;
+}
