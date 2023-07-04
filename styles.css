@@ -15,13 +15,13 @@ body {
 main {
     max-width: 375px;
     height: auto;
-    margin: 20px 15px 20px 15px;
+    margin: 25px 10px 20px 10px;
     
 }
 
 .mobile-product-image {
     display: block;
-    max-width: 350px;
+    max-width: 360px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -31,19 +31,89 @@ main {
 
 .card-component {
     background-color: #ffffff;
-    max-width: 350px;
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .eyebrow {
     font-family: 'Montserrat';
-    font-weight: 100;
+    font-weight: 400;
+    font-size: .7rem;
+    margin: 30px 0 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    color: #71747d;
 }
 
 .product-name {
     font-family: 'Fraunces';
     font-weight: 700;
+    font-size: 2.09rem;
+    line-height: 2rem;
+    margin: 10px 5px 0 25px;
+    color: #232a30;
+}
+
+.description {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 10px 25px 0 25px;
+    color: #71747d;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+}
+
+.buy-info {
+    margin: 25px 0 0 23px;
+}
+
+.sale-price {
+    display: inline;
+    font-family: 'Fraunces';
+    font-size: 1.9rem;
+    color: #368266;
+    margin-right: 20px;
+}
+
+.original-price {
+    font-style: "Montserrat";
+    font-weight: 100;
+    font-size: .8rem;
+    text-decoration: line-through;
+    color: #71747d;
+
+}
+
+#og-price {
+    vertical-align: middle;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    font-style: "Montserrat";
+    font-weight: 700;
+    font-size: .8rem;
+    color: #ffffff;
+    background-color: #368266;
+    padding: 15px 105px 15px 103px;
+    margin: 15px 20px 15px 0;
+    border-radius: 10px;
+}
+
+#add-to-cart {
+    position: relative;
+    display: inline;
+    margin-right: 10px;
+}
+
+#button-text {
+    letter-spacing: .025rem;
 }
 
 .desktop-product-image {
