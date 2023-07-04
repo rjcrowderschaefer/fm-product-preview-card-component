@@ -37,6 +37,8 @@ main {
     padding-top: 20px;
     padding-bottom: 8px;
     margin-bottom: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .eyebrow {
@@ -118,4 +120,56 @@ main {
 
 .desktop-product-image {
     display: none;
+}
+
+@media (min-width: 900px) {
+    html, body {
+        min-height: 100%
+    }
+
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-row-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .grid-column-wrapper {
+        padding: 1rem
+    } */
+
+    .desktop-product-image {
+        display: block;
+        height: 430px;
+        width: 303.22px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .mobile-product-image {
+        display: none;
+    }
+
+    .card-component {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        font-style: "Montserrat";
+        font-weight: 700;
+        font-size: .8rem;
+        color: #ffffff;
+        background-color: #368266;
+        padding: 15px 105px 15px 103px;
+        margin: 15px 20px 15px 0;
+        border-radius: 10px;
+    }
+
 }
