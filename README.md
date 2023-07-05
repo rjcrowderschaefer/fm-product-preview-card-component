@@ -34,10 +34,12 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [GitHub Repo](https://github.com/rjcrowderschaefer/fm-product-preview-card-component)
+- [Live Site URL](https://rjcrowderschaefer.github.io/fm-product-preview-card-component/)
 
 ## My process
+
+I continued to practice the mobile-first development workflow with this project, focusing on building the mobile layout first and then moving to the desktop layout using the specific breakpoints provided. I also focused on using semantic HTML and avoided using div tags where possible. 
 
 ### Built with
 
