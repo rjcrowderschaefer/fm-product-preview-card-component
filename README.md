@@ -12,11 +12,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -39,7 +35,7 @@ Users should be able to:
 
 ## My process
 
-I continued to practice the mobile-first development workflow with this project, focusing on building the mobile layout first and then moving to the desktop layout using the specific breakpoints provided. I also focused on using semantic HTML and avoided using div tags where possible. 
+I continued to practice the mobile-first development workflow with this project, focusing on building the mobile layout first and then moving to the desktop layout using the specific breakpoints provided. I also focused on using semantic HTML and avoided using div tags where possible. I worked with CSS to align with the design mock ups as closely as possible and implemented some new CSS rules such as letter-spacing and line-height.
 
 ### Built with
 
@@ -48,59 +44,56 @@ I continued to practice the mobile-first development workflow with this project,
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+This project allowed me to further develop my approach to semantic HTML and how the code is organized to be as efficient and DRY as possible. I spent the main part of this project learning how to best implement CSS Grid for the desktop view to ensure the content is positioned correctly and responsive. I'm now more familiar with how CSS Grid can be used in the building process and I look forward to implementing this layout system for future and more complex projects.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<h1>Some code snipets that I'm proud of:</h1>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas:
+            "grid-div-1 grid-div-2"
+            "grid-div-3 grid-div-3"
+            ". ."
+    }
+
+    .grid-div-1 {
+        grid-area: grid-div-1;
+    }
+
+    .grid-div-2 {
+        grid-area: grid-div-2;
+    }
+
+    .grid-div-3 {
+        grid-area: grid-div-3;
+    }
+```
+```css
+.eyebrow {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: .7rem;
+    margin: 30px 0 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    color: #71747d;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+Further exploration of CSS Grid and how to best organize and display HTML efficiently while ensuring the best possible user experience.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- LinkedIn - [RJ Crowder-Schaefer](https://www.linkedin.com/in/rjcrowderschaefer/)
+- Frontend Mentor - [@rjcrowderschaefer](https://www.frontendmentor.io/profile/rjcrowderschaefer)
+- GitHub - [@rjcrowderschaefer](https://github.com/rjcrowderschaefer)
