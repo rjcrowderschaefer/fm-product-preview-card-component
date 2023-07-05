@@ -13,10 +13,7 @@ body {
 }
 
 main {
-    max-width: 375px;
-    height: auto;
-    margin: 25px 10px 20px 10px;
-    
+    margin-top: 25px; 
 }
 
 .mobile-product-image {
@@ -133,19 +130,34 @@ main {
         align-items: center;
     }
 
-    .grid-row-wrapper {
+    .grid-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-areas:
+            "grid-div-1 grid-div-2"
+            "grid-div-3 grid-div-3"
+            ". ."
     }
 
-    /* .grid-column-wrapper {
-        padding: 1rem
-    } */
+    .grid-div-1 {
+        grid-area: grid-div-1;
+    }
+
+    .grid-div-2 {
+        grid-area: grid-div-2;
+    }
+
+    .grid-div-3 {
+        grid-area: grid-div-3;
+    }
 
     .desktop-product-image {
         display: block;
-        height: 430px;
-        width: 303.22px;
+        height: 458px;
+        width: 300px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
@@ -157,6 +169,13 @@ main {
     .card-component {
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
+        width: 300px;
+        height: 430px;
+    }
+
+    .product-name {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .button {
@@ -167,8 +186,8 @@ main {
         font-size: .8rem;
         color: #ffffff;
         background-color: #368266;
-        padding: 15px 105px 15px 103px;
-        margin: 15px 20px 15px 0;
+        padding: 15px 78px 15px 78px;
+        margin: 30px 20px 15px 0;
         border-radius: 10px;
     }
 
